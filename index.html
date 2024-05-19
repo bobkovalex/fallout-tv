@@ -10,14 +10,26 @@
 
     <meta name="description" content="Fallout tv screensaver">
     <title>Fallout TV</title>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="resources/js/main.js"></script>
 </head>
 
-<body id="f-tv">
-    <button onclick="openFullscreen()" id="btn">Go full screen</button>
+<body>
+    
+    <div id="video-container">
+        <div id="video-loading"></div>
+        <video id="video-player" src="resources/video/f4_1.mp4" autoplay autobuffer />
+        
+    </div>
+    <button onclick="openFullscreen()" id="btn" class="btn btn-warning position-absolute top-0 end-0">Go full screen</button>
 </body>
 
 </html>
